@@ -1,3 +1,8 @@
 .idea/
 
 out/
+
+web/.DS_Store
+web/css/.DS_Store
+web/images/.DS_Store
+web/js/.DS_Store
