@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+</head>
+<body>
+<ul>
+    <li id="miyo" onclick="foo('miyo')">Miyo</li> <!-- wrong way when li is created with js-->
+    <li id="yuki">Yuki</li> <!-- right way when li is created with js -->
+</ul>
+<script>
+    function foo(friend) {
+        alert(friend);
+    }
+    document.getElementById("yuki").addEventListener("click", function() {
+        foo(this.id);
+    });
+</script>
+</body>
+</html>
+
